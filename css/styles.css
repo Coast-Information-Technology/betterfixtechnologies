@@ -145,21 +145,21 @@ nav > a {
   position: absolute;
   top: 53vh;
   left: 15vw;
-  background-color: var(--primary-font-color);
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  box-shadow: -13px 13px 30px #bdc6d4, 11px -11px 30px #aaa;
+  background: linear-gradient(145deg, #dde0e6, #ffffff);
+  box-shadow: 8px 8px 16px #909499, -8px -8px 16px #bfbfbf;
 }
 .rotor-button {
   /* position: absolute;
   top: .rem;
   left: 1.3rem; */
-  background-color: #c1c9d4;
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
-  box-shadow: 9px -9px 15px #e6effc, 9px 9px 15px #9ca3ac;
+  background: linear-gradient(145deg, #aeb5bf, #cfd7e3);
+  box-shadow: 50px 50px 100px #4d5055, -50px -50px 100px #ffffff;
 }
 
 /* header styling end */
