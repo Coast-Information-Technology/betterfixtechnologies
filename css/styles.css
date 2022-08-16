@@ -1,116 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap");
 
-@font-face{
-    font-family: jacquespro;
-    src: url(/font/JacquesPro-Bold.woff);
-    font-weight: 800;
+@font-face {
+  font-family: jacquespro;
+  src: url(/font/JacquesPro-Bold.woff);
+  font-weight: 800;
 }
-@font-face{
-    font-family: jacquespro;
-    src: url(/font/JacquesPro-ExtraBold.woff);
-    font-weight: 900;
+@font-face {
+  font-family: jacquespro;
+  src: url(/font/JacquesPro-ExtraBold.woff);
+  font-weight: 900;
 }
-@font-face{
-    font-family: jacquespro;
-    src: url(/font/JacquesPro-ExtraLight.woff);
-    font-weight: 200;
+@font-face {
+  font-family: jacquespro;
+  src: url(/font/JacquesPro-ExtraLight.woff);
+  font-weight: 200;
 }
-@font-face{
-    font-family: jacquespro;
-    src: url(/font/JacquesPro-Light.woff);
-    font-weight: 300;
+@font-face {
+  font-family: jacquespro;
+  src: url(/font/JacquesPro-Light.woff);
+  font-weight: 300;
 }
-@font-face{
-    font-family: jacquespro;
-    src: url(/font/JacquesPro-Medium.woff);
-    font-weight: 500;
+@font-face {
+  font-family: jacquespro;
+  src: url(/font/JacquesPro-Medium.woff);
+  font-weight: 500;
 }
-@font-face{
-    font-family: jacquespro;
-    src: url(/font/JacquesPro-Regular.woff);
-    font-weight: 400;
+@font-face {
+  font-family: jacquespro;
+  src: url(/font/JacquesPro-Regular.woff);
+  font-weight: 400;
 }
-:root{
-    --secondary-color: #ffa238; 
-    --primary-color: #1f75ff; 
-    --primary-font-color: #f5f9ff; 
-    --secondary-font-color: #00060f;
+:root {
+  --secondary-color: #ffa238;
+  --primary-color: #1f75ff;
+  --primary-font-color: #f5f9ff;
+  --secondary-font-color: #00060f;
+  --transparent-overlay: rgba(0, 63, 97, 0.8);
 }
 
-*{ 
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* haeder styling */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 1rem 3rem;
-    font-family: 'Mulish', sans-serif;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 1rem 3rem;
+  font-family: "Mulish", sans-serif;
 }
-header a{
-    text-decoration: none;
-    font-size: 1.2rem;
+header a {
+  text-decoration: none;
+  font-size: 1.2rem;
 }
-header a img{
-    max-width: 10rem;
-    max-height: 10rem;
+header a img {
+  max-width: 10rem;
+  max-height: 10rem;
 }
-header>nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5rem;
-
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5rem;
 }
-header ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding-right: 5rem;
-
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-right: 5rem;
 }
 header li a {
-    padding: 1rem;
-    color: var(--secondary-font-color);
+  padding: 1rem;
+  color: var(--secondary-font-color);
 }
-nav>a{
-    color: var(--primary-color);
-    border: 3px solid var(--primary-color);
-    padding: 0.7rem 1.7rem;
+nav > a {
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  padding: 0.7rem 1.7rem;
 }
-
-.landing{
-    min-height: 70vh;
-    width: 100%;
-    background-color: #00060f;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    position: relative;
-}
-.landing::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    z-index: 1;
-    background-color: #00060f;
-}
-.landing>video{
-    width: 100%;
-    height: 100%;
+.landing-section {
+  max-height: 100%;
+  position: relative;
 }
 
+.landing {
+  max-height: 100vh;
+  width: 100%;
+  background-color: #00060f;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 65%);
+  position: relative;
+}
+.landing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: 1;
+  background-color: var(--transparent-overlay);
+}
+.landing > video {
+  width: 100%;
+  height: 100%;
+}
+.landing-content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 10vh;
+  bottom: -10vh;
+  left: 10vw;
+  z-index: 10;
+  width: 80vw;
+  height: 70vh;
+}
+.landing-content h1 {
+  font-size: 4rem;
+  color: var(--primary-font-color);
+  flex: 1 1 40%;
+}
+.landing-content img {
+  flex: 1 1 50%;
+  max-height: 70vh;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+  border-top: 1rem solid #d3c3c1;
+  border-right: 1rem solid #d3c3c1;
+  border-left: 1rem solid #d3c3c1;
+}
+.rotor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 53vh;
+  left: 15vw;
+  background-color: var(--primary-font-color);
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  box-shadow: -13px 13px 30px #bdc6d4, 11px -11px 30px #aaa;
+}
+.rotor-button {
+  /* position: absolute;
+  top: .rem;
+  left: 1.3rem; */
+  background-color: #c1c9d4;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  box-shadow: 9px -9px 15px #e6effc, 9px 9px 15px #9ca3ac;
+}
 
 /* header styling end */
-
-
-
-
 
 /* footer styling */
