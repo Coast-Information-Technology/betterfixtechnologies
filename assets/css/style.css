@@ -397,7 +397,7 @@ header
   font-size: var(--fs-nav);
   font-family: var(--ff-primary-heading);
   border-radius: 5px;
-  animation: navbar 1s linear 0s 1 normal forwards;
+  animation: navbar 0.3s linear 0s normal forwards;
   box-shadow: -1px 1px 3px var(--clr-primary);
 }
 .sub-menu {
