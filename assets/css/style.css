@@ -439,8 +439,7 @@ banner
   position: absolute;
   z-index: 2;
   inset: 0;
-  background-color: var(--clr-wrapper);
-  padding: 20px;
+  padding: 2rem;
   text-align: center;
   height: 85vh;
   padding: var(--sm-padding);
