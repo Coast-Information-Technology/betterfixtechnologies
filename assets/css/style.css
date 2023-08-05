@@ -34,6 +34,7 @@ Variable
   --clr-white: hsl(207, 100%, 100%);
   --clr-dark: hsl(207, 14%, 14%);
   --clr-full-transparent: rgba(0, 0, 0, 0);
+  --clr-wrapper: rgba(0, 0, 200, 0.4);
   --ff-primary: "Be Vietnam Pro", sans-serif;
   --ff-body: "Mulish", sans-serif;
   --ff-primary-heading: var(--ff-primary);
@@ -50,7 +51,7 @@ Variable
   --fs-secondary-heading: var(--fs-md);
   --fs-tertiary-heading: var(--fs-secondary-heading);
   --fs-body: var(--fs-sm);
-  --fs-nav: var(--fs-xs);
+  --fs-nav: 1.5rem;
   --fs-button: 0.8125rem;
   --lg-padding: 2rem;
   --md-padding: 1.5rem;
@@ -181,8 +182,11 @@ global styles
   padding-inline: var(--lg-padding);
 }
 header {
+  min-width: 100%;
   padding-block: 1rem;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--clr-full-transparent);
+  background-color: var(--clr-white);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
 .section-padding-block {
@@ -194,54 +198,75 @@ header {
   align-items: center;
 }
 
-/* 
-.green-button a {
-  font-size: 14px;
-  color: #fff;
-  background-color: #43ba7f;
+.flex-column-justify-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+.flex-row-justify-center {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.blue-button {
+  font-size: var(--fs-button);
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   transition: all 0.3s;
-} */
-/* 
-.green-button a:hover {
+}
+
+.blue-button:hover {
   opacity: 0.9;
 }
 
-.orange-button a {
-  font-size: 14px;
-  color: #fff;
-  background-color: #ff511a;
+.div-dec {
+  width: 80px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--clr-white);
+  margin: 20px auto 0 auto;
+}
+
+.orange-button {
+  font-size: var(--fs-button);
+  color: var(--clr-white);
+  background-color: var(--clr-accent);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   transition: all 0.3s;
 }
 
-.orange-button a:hover {
+.orange-button:hover {
   opacity: 0.9;
-} */
+}
+
+/* 
+---------------------------------------------
+Global Styles end
+--------------------------------------------- 
+*/
 
 /* 
 ---------------------------------------------
 header
 --------------------------------------------- 
 */
-
-header {
-  /* background-color: var(--clr-full-transparent); */
-  background-color: var(--clr-white);
-  position: fixed;
-  z-index: 2;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-}
 
 /* primary-navigation-toggle idea 1 */
 
@@ -273,16 +298,11 @@ header {
   display: block;
   position: absolute;
   background-color: var(--clr-white);
-  top: 33px;
-  width: 32px;
-  height: 40px;
+  width: 2rem;
+  height: 2.5rem;
   text-indent: -9999em;
   z-index: 99;
   right: 40px;
-}
-
-.background-header .primary-navigation-toggle {
-  top: 23px;
 }
 
 /* this is the middle dash */
@@ -300,12 +320,6 @@ header {
   width: 30px;
   height: 2px;
   left: 0;
-}
-
-.background-header .primary-navigation-toggle span,
-.background-header .primary-navigation-toggle span:before,
-.background-header .primary-navigation-toggle span:after {
-  background-color: var(--clr-full-transparent);
 }
 
 /* the top and bottom dashes */
@@ -357,23 +371,12 @@ header {
   background-color: var(--clr-primary);
 }
 
-.background-header .primary-navigation-toggle span:before,
-.background-header .primary-navigation-toggle span:after {
-  background-color: #333;
-}
-.background-header .primary-navigation-toggle.active span:before {
-  background-color: #333;
-}
-
-.background-header .primary-navigation-toggle.active span:after {
-  background-color: #333;
-}
-
 /* primary-navigation-toggle idea 2 end */
 
 .primary-navigation {
   display: none;
   position: relative;
+  z-index: 1;
 }
 .primary-navigation-toggle.active .primary-navigation {
   display: block;
@@ -385,16 +388,17 @@ header {
   align-items: flex-start;
   position: absolute;
   gap: 1rem;
-  top: 2.7rem;
+  top: 2.6rem;
   right: -2rem;
   width: 70vw;
   padding: 2rem;
   background-color: var(--clr-white);
   color: var(--clr-primary);
+  font-size: var(--fs-nav);
   font-family: var(--ff-primary-heading);
   border-radius: 5px;
   animation: navbar 1s linear 0s 1 normal forwards;
-  box-shadow: -5px 5px 5px var(--clr-dark);
+  box-shadow: -1px 1px 3px var(--clr-primary);
 }
 .sub-menu {
   display: none;
@@ -412,113 +416,79 @@ header {
 banner
 --------------------------------------------- 
 */
-
-.swiper-container {
-  height: calc(100vh - 0px);
-  margin: 0px;
-  background-color: #212741;
-}
-
-.swiper-slide {
+.slider-container {
+  max-width: 100%;
   overflow: hidden;
+  position: relative; /* Added to position the navigation dots */
 }
 
-.slide-inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  height: 85vh; /* Make each slide take the full height of the viewport */
   background-size: cover;
   background-position: center;
 }
 
-.swiper-slide-active h2 {
-  animation: fadeInLeft 0.8s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 0.3s;
-  opacity: 1;
-}
-
-.swiper-slide-active p {
-  animation: fadeInRight 0.8s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 0.3s;
-  opacity: 1;
-}
-
-.swiper-slide-active .div-dec {
-  animation: fadeIn 0.8s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 0.3s;
-  opacity: 1;
-}
-
-.swiper-slide-active .buttons .green-button,
-.swiper-slide-active .buttons .orange-button {
-  animation: fadeInUp 0.8s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 0.3s;
-  opacity: 1;
-}
-
-.slide-inner .header-text {
+.slide-content {
   position: absolute;
-  width: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.slide-inner .header-text h2 {
-  position: relative;
   z-index: 2;
-  font-size: 56px;
-  color: #fff;
-  font-weight: 700;
-  opacity: 1;
-  visibility: visible;
-  line-height: 70px;
-  margin-bottom: 40px;
+  inset: 0;
+  background-color: var(--clr-wrapper);
+  padding: 20px;
+  text-align: center;
+  height: 85vh;
+  padding: var(--sm-padding);
+}
+.slide-content h2,
+.slide-content h1 {
+  margin: 0;
+  color: var(--clr-white);
+  font-size: var(--fs-primary-heading);
+  font-weight: var(--fw-bold);
 }
 
-.slide-inner .header-text .div-dec {
-  width: 80px;
-  height: 6px;
-  border-radius: 3px;
+.slide-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: var(--clr-white);
+  font-size: var(--fs-nav);
+}
+.slide-content .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Style for navigation dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
   background-color: #fff;
-  margin-bottom: 40px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.slide-inner .header-text p {
-  color: #fff;
-  margin-right: 60px;
-  margin-bottom: 50px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.slide-inner .header-text h2 em {
-  font-style: normal;
-  color: #ff511a;
-}
-
-.slide-inner .header-text .buttons {
-  display: inline;
-  opacity: 1;
-  visibility: visible;
-}
-
-.slide-inner .header-text .buttons .green-button {
-  display: inline;
-  float: left;
-  margin-right: 20px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #fff !important;
 }
 
 /*
@@ -939,14 +909,6 @@ page heading
   font-size: 56px;
   color: #fff;
   font-weight: 700;
-}
-
-.page-heading .div-dec {
-  width: 80px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #fff;
-  margin: 20px auto 0 auto;
 }
 
 /* 
@@ -1449,7 +1411,7 @@ body {
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
   }
-  .slide-inner .header-text p {
+  /* .slide-inner .header-text p {
     display: none;
   }
   .slide-inner .header-text {
@@ -1467,7 +1429,7 @@ body {
   }
   .slide-inner .header-text .buttons .green-button {
     float: none;
-  }
+  } */
   .services .service-item i {
     margin-bottom: 35px;
   }

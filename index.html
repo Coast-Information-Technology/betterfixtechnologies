@@ -59,47 +59,109 @@
       <!-- ***** Menu Start ***** -->
       <nav class="primary-navigation" id="primary-navigation" aria-hidden="true" aria-label="primary-navigation">
           <ul role="list" class="nav">
-              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="about.html">About Us</a></li>
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
               <li class="has-sub">
-                  <a href="javascript:void(0)">Services</a>
+                  <a href="javascript:void(0)">Pages</a>
                   <ul role="list" class="sub-menu">
-                      <li><a href="cctv.html">CCTV Engineering</a></li>
-                      <li><a href="networking.html">Networking Engineering</a></li>
-                      <li><a href="printing.html">Printer Engineering</a></li>
-                      <li><a href="laptop.html">Laptop Engineering</a></li>
+                      <li><a href="about-us.html">About Us</a></li>
+                      <li><a href="our-services.html">Our Services</a></li>
+                      <li><a href="contact.html" class="orange-button">Contact Us</a></li>
                   </ul>
               </li>
               <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li>
-              <li><a href="contact.html">Contact Support</a></li> 
+              <li><a href="contact.html" class="orange-button">Contact Support</a></li> 
           </ul>     
       </nav>
       <!-- ***** Menu End ***** -->
   </header>
   <!-- ***** Header Area End ***** -->
 
+  
   <!-- ***** Main Banner Area Start ***** -->
-  <section class="swiper-container" id="top">
+
+  <section class="hero slider-container">
+    <div class="slider" role="list">
+      <div class="slide" role="listitem" style="background-image: url('./assets/images/slide-01.jpg');">
+        <div class="slide-content flex-column-justify-center">
+          <h1>Your Ultimate Tech Solutions Provider</h1>
+          <div class="div-dec" aria-hidden="true"></div>
+          <p>Welcome to Better Fix Technologies - Where Technology Comes to Life!</p>
+          <div class="button flex-row-justify-center"><a href="contact.html" class="blue-button">Contact Us</a></div>
+        </div>
+      </div>
+      <div class="slide" role="listitem" style="background-image: url('./assets/images/cctv.webp');">
+        <div class="slide-content flex-column-justify-center">
+          <h2>Secure Your Spaces with Cutting-Edge CCTV Systems</h2>
+          <div class="div-dec" aria-hidden="true"></div>
+          <p>Explore our premium CCTV sales and installation services for ultimate peace of mind.</p>
+          <div class="button"><a href="cctv.html" class="blue-button">Discover More</a><a href="contact.html" class="orange-button">Contact Us</a></div>
+        </div>
+      </div>
+      <div class="slide" role="listitem" style="background-image: url('./assets/images/networking.webp');">
+        <div class="slide-content flex-column-justify-center">
+          <h2>Stay Connected and Productive</h2>
+          <div class="div-dec" aria-hidden="true"></div>
+          <p>Effortless Networking Installation and Maintenance for seamless operations.</p>
+          <div class="button"><a href="networking.html" class="blue-button">Discover More</a><a href="contact.html" class="orange-button">Contact Us</a></div>
+        </div>
+      </div>
+      <div class="slide" role="listitem" style="background-image: url('./assets/images/printer.webp');">
+        <div class="slide-content flex-column-justify-center">
+          <h2>Print with Precision and Perfection</h2>
+          <div class="div-dec" aria-hidden="true"></div>
+          <p>Discover top-notch Printer Engineering, Sales, Installation, and Maintenance services.</p>
+          <div class="button"><a href="printer.html" class="blue-button">Discover More</a><a href="contact.html" class="orange-button">Contact Us</a></div>
+        </div>
+      </div>
+      <div class="slide" role="listitem" style="background-image: url('./assets/images/laptop.webp');">
+        <div class="slide-content flex-column-justify-center">
+          <h2>Laptops Tailored to Your Needs</h2>
+          <div class="div-dec" aria-hidden="true"></div>
+          <p>Choose from a wide selection of laptops and rely on our expert Laptop Repairs.</p>
+          <div class="button"><a href="laptop.html" class="blue-button">Discover More</a><a href="contact.html" class="orange-button">Contact Us</a></div>
+        </div>
+      </div>
+      <div class="slide" role="listitem" style="background-image: url('./assets/images/slide-02.jpg');">
+        <div class="slide-content flex-column-justify-center">
+          <h2>Customer-Centric Approach</h2>
+          <div class="div-dec" aria-hidden="true"></div>
+          <p>Experience unmatched satisfaction with our dedicated and friendly support.</p>
+          <div class="button flex-row-justify-center"><a href="contact.html" class="blue-button">Contact Us</a></div>
+        </div>
+      </div>
+      <div class="slide" role="listitem" style="background-image: url('./assets/images/slide-03.jpg');">
+        <div class="slide-content flex-column-justify-center">
+          <h2>Experienced Professionals at Your Service</h2>
+          <div class="div-dec" aria-hidden="true"></div>
+          <p>Trust our skilled team to handle all your technology requirements.</p>
+          <div class="button flex-row-justify-center"><a href="contact.html" class="blue-button">Contact Us</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <button class="dot" aria-label="Slide 1" data-index="0" aria-pressed="true"></button>
+      <button class="dot" aria-label="Slide 2" data-index="1"></button>
+      <button class="dot" aria-label="Slide 3" data-index="2"></button>
+      <button class="dot" aria-label="Slide 4" data-index="3"></button>
+      <button class="dot" aria-label="Slide 5" data-index="4"></button>
+      <button class="dot" aria-label="Slide 6" data-index="5"></button>
+      <button class="dot" aria-label="Slide 7" data-index="6"></button>
+    </div>
+  </section>
+
+  <!-- <section class="swiper-container" id="top">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="slide-inner" style="background-image:url(assets/images/slide-01.jpg)">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="header-text">
-                  <h2>Crystal Clear CCTV Solutions</h2>
-                  <div class="div-dec"></div>
-                  <p>Secure your premises with our cutting-edge CCTV systems. We offer top-quality sales, installations, and maintenance services, ensuring your peace of mind.</p>
-                  <div class="buttons">
-                    <button class="green-button">
-                      <a href="cctv.html">Discover More >>></a>
-                    </button>
-                    <button class="orange-button">
-                      <a href="contact.html">Contact Us</a>
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <h2>Crystal Clear CCTV Solutions</h2>
+            <div class="div-dec" aria-hidden="true"></div>
+            <p class="paragraph">Secure your premises with our cutting-edge CCTV systems. We offer top-quality sales, installations, and maintenance services, ensuring your peace of mind.</p>
+            <div class="buttons">
+              <a href="cctv.html" class="blue-button" class="orange-button">Discover More </a>
+              <a href="contact.html" class="orange-button" class="orange-button">Contact Us</a>
             </div>
           </div>
         </div>
@@ -107,22 +169,12 @@
       <div class="swiper-slide">
         <div class="slide-inner" style="background-image:url(assets/images/slide-02.jpg)">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="header-text">
-                  <h2>Networking Made Effortless</h2>
-                  <div class="div-dec"></div>
-                  <p>Stay connected and productive with our expert networking installations and maintenance. We optimize your network for smooth operations and reliable performance.</p>
-                  <div class="buttons">
-                    <button class="green-button">
-                      <a href="networking.html">Discover More >>></a>
-                    </button>
-                    <button class="orange-button">
-                      <a href="contact.html">Contact Us</a>
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <h2>Networking Made Effortless</h2>
+            <div class="div-dec" aria-hidden="true"></div>
+            <p class="paragraph">Stay connected and productive with our expert networking installations and maintenance. We optimize your network for smooth operations and reliable performance.</p>
+            <div class="buttons">
+              <a href="networking.html" class="blue-button" class="orange-button">Discover More </a>
+              <a href="contact.html" class="orange-button" class="orange-button">Contact Us</a>
             </div>
           </div>
         </div>
@@ -130,22 +182,12 @@
       <div class="swiper-slide">
         <div class="slide-inner" style="background-image:url(assets/images/slide-03.jpg)">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="header-text">
-                  <h2>Printer Perfection</h2>
-                  <div class="div-dec"></div>
-                  <p>Experience printing solutions at their best. Our printer engineering, sales, installation, and maintenance services keep your office running smoothly.</p>
-                  <div class="buttons">
-                    <div class="green-button">
-                      <a href="printing.html">Discover More >>></a>
-                    </div>
-                    <div class="orange-button">
-                      <a href="contact.html">Contact Us</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h2>Printer Perfection</h2>
+            <div class="div-dec" aria-hidden="true"></div>
+            <p class="paragraph">Experience printing solutions at their best. Our printer engineering, sales, installation, and maintenance services keep your office running smoothly.</p>
+            <div class="buttons">
+              <a href="printing.html" class="blue-button" class="orange-button">Discover More </a>
+              <a href="contact.html" class="orange-button" class="orange-button">Contact Us</a>
             </div>
           </div>
         </div>
@@ -153,32 +195,76 @@
       <div class="swiper-slide">
         <div class="slide-inner" style="background-image:url(assets/images/slide-03.jpg)">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="header-text">
-                  <h2>Laptop Expertise</h2>
-                  <div class="div-dec"></div>
-                  <p>Find the perfect laptop for your needs from our diverse collection. Need repairs? Our skilled technicians will have you up and running in no time!</p>
-                  <div class="buttons">
-                    <div class="green-button">
-                      <a href="laptop.html">Discover More >>></a>
-                    </div>
-                    <div class="orange-button">
-                      <a href="contact.html">Contact Us</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <h2>Laptop Expertise</h2>
+            <div class="div-dec" aria-hidden="true"></div>
+            <p class="paragraph">Find the perfect laptop for your needs from our diverse collection. Need repairs? Our skilled technicians will have you up and running in no time!</p>
+            <div class="buttons">
+              <a href="laptop.html" class="blue-button" class="orange-button">Discover More </a>
+              <a href="contact.html" class="orange-button" class="orange-button">Contact Us</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  -->
+    
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div>
+
     <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
-  </section>
+  </section>  -->
 
   <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-archive"></i>
+            <h4>CSS Templates</h4>
+            <p>TemplateMo website is the best for you to explore and download free website templates.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-cloud"></i>
+            <h4>HTML5 Web Pages</h4>
+            <p>Templates are based on Bootstrap 5 CSS framework. You can easily adapt or modify based on your needs.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-charging-station"></i>
+            <h4>Responsive Designs</h4>
+            <p>All of our CSS templates are 100% free to use for commercial or business websites.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-suitcase"></i>
+            <h4>Mobile and Tablet ready!</h4>
+            <p>Our HTML CSS templates are well-tested on mobile, tablet, and desktop compatibility.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-archway"></i>
+            <h4>Fast Customer Support</h4>
+            <p>Do not be hesitated to contact us if you have any question or concern about our templates.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-puzzle-piece"></i>
+            <h4>Fully Customizable</h4>
+            <p>If you have any idea or suggestion about new templates, feel free to let us know.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="services" id="services">
     <div class="container">
