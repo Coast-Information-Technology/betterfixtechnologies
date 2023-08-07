@@ -31,58 +31,52 @@
 
 <body>
 
-
   <!-- ***** Header Area Start ***** -->
   <header class="header flex-row-justify-space-between">
-      <!-- ***** Logo Start ***** -->
-      <a href="index.html" class="brand">
-          <img src="assets/images/logo.png" alt="Better Fix Technologies">
-      </a>
-      <!-- ***** Logo End ***** -->   
+    <!-- ***** Logo Start ***** -->
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="Better Fix Technologies">
+    </a>
+    <!-- ***** Logo End ***** -->   
 
       <!-- ***** Hamburger  ***** --> 
 <!-- hamburger menu idea 1 -->
       <!-- <button class='primary-navigation-toggle' aria-controls="primary-navigation" aria-expanded="false" aria-label="primary-navigation-toggle">
           <span class="visually-hidden">Menu</span>
           <span id="icon" class="icon-open" aria-hidden="true"></span>
-      </button> -->
-
-      
+      </button> -->    
 <!-- hamburger menu idea 1 end-->
 
+    <!-- ***** Hamburger  ***** --> 
+    <button class='primary-navigation-toggle' aria-controls="primary-navigation" aria-expanded="false" aria-label="primary-navigation-toggle">
+      <span>Menu</span>
+    </button>
+    <!-- ***** Hamburger End ***** --> 
 
-      <!-- ***** Hamburger  ***** --> 
-      <button class='primary-navigation-toggle' aria-controls="primary-navigation" aria-expanded="false" aria-label="primary-navigation-toggle">
-          <span>Menu</span>
-      </button>
-      <!-- ***** Hamburger End ***** --> 
+    <!-- ***** Menu Start ***** -->
+    <nav class="primary-navigation" id="primary-navigation" aria-hidden="true" aria-label="primary-navigation">
+      <ul role="list" class="nav" aria-label="navbar">
+        <li class="scroll-to-section hvr-float-shadow"><a href="#top" class="active">Home</a></li>
+        <li class="scroll-to-section hvr-float-shadow"><a href="#services">Services</a></li>
+        <li class="scroll-to-section hvr-float-shadow"><a href="#about">About</a></li>
+        <li class="has-sub">
+          <a href="javascript:void(0)">Pages</a>
+          <ul role="list" class="sub-menu" aria-label="sub menu">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="our-services.html">Our Services</a></li>
+            <li><a href="contact.html" class="secondary-cta">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="scroll-to-section hvr-float-shadow"><a href="#testimonials">Testimonials</a></li>
+        <li><a href="contact.html" class="primary-cta">Contact Support</a></li> 
+      </ul>     
+    </nav>
+    <!-- ***** Menu End ***** -->
 
-
-      <!-- ***** Menu Start ***** -->
-      <nav class="primary-navigation" id="primary-navigation" aria-hidden="true" aria-label="primary-navigation">
-          <ul role="list" class="nav">
-              <li class="scroll-to-section hvr-float-shadow"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section hvr-float-shadow"><a href="#services">Services</a></li>
-              <li class="scroll-to-section hvr-float-shadow"><a href="#about">About</a></li>
-              <li class="has-sub">
-                  <a href="javascript:void(0)">Pages</a>
-                  <ul role="list" class="sub-menu">
-                      <li><a href="about-us.html">About Us</a></li>
-                      <li><a href="our-services.html">Our Services</a></li>
-                      <li><a href="contact.html" class="secondary-cta">Contact Us</a></li>
-                  </ul>
-              </li>
-              <li class="scroll-to-section hvr-float-shadow"><a href="#testimonials">Testimonials</a></li>
-              <li><a href="contact.html" class="primary-cta">Contact Support</a></li> 
-          </ul>     
-      </nav>
-      <!-- ***** Menu End ***** -->
   </header>
   <!-- ***** Header Area End ***** -->
   
-  
   <!-- ***** Hero Section Start ***** -->
-
   <section class="hero slider-container">
     <div class="slider" role="list">
       <div class="slide" role="listitem" style="background-image: url('./assets/images/slide-01.jpg');">
@@ -97,7 +91,7 @@
         <div class="slide-content container flex-column-justify-center">
           <h2 class="primary-heading">Secure Your Spaces with Cutting-Edge CCTV Systems</h2>
           <div class="div-dec" aria-hidden="true"></div>
-          <p>Explore our premium CCTV sales and installation services for ultimate peace of mind.</p>
+          <p class="body">Explore our premium CCTV sales and installation services for ultimate peace of mind.</p>
           <div class="button"><a href="cctv.html" class="primary-cta">Discover More</a><a href="contact.html" class="secondary-cta">Contact Us</a></div>
         </div>
       </div>
@@ -105,7 +99,7 @@
         <div class="slide-content container flex-column-justify-center">
           <h2 class="primary-heading">Stay Connected and Productive</h2>
           <div class="div-dec" aria-hidden="true"></div>
-          <p>Effortless Networking Installation and Maintenance for seamless operations.</p>
+          <p class="body">Effortless Networking Installation and Maintenance for seamless operations.</p>
           <div class="button"><a href="networking.html" class="primary-cta">Discover More</a><a href="contact.html" class="secondary-cta">Contact Us</a></div>
         </div>
       </div>
@@ -113,7 +107,7 @@
         <div class="slide-content container flex-column-justify-center">
           <h2 class="primary-heading">Print with Precision and Perfection</h2>
           <div class="div-dec" aria-hidden="true"></div>
-          <p>Discover top-notch Printer Engineering, Sales, Installation, and Maintenance services.</p>
+          <p class="body">Discover top-notch Printer Engineering, Sales, Installation, and Maintenance services.</p>
           <div class="button"><a href="printer.html" class="primary-cta">Discover More</a><a href="contact.html" class="secondary-cta">Contact Us</a></div>
         </div>
       </div>
@@ -121,7 +115,7 @@
         <div class="slide-content container flex-column-justify-center">
           <h2 class="primary-heading">Laptops Tailored to Your Needs</h2>
           <div class="div-dec" aria-hidden="true"></div>
-          <p>Choose from a wide selection of laptops and rely on our expert Laptop Repairs.</p>
+          <p class="body">Choose from a wide selection of laptops and rely on our expert Laptop Repairs.</p>
           <div class="button"><a href="laptop.html" class="primary-cta">Discover More</a><a href="contact.html" class="secondary-cta">Contact Us</a></div>
         </div>
       </div>
@@ -129,7 +123,7 @@
         <div class="slide-content container flex-column-justify-center">
           <h2 class="primary-heading">Customer-Centric Approach</h2>
           <div class="div-dec" aria-hidden="true"></div>
-          <p>Experience unmatched satisfaction with our dedicated and friendly support.</p>
+          <p class="body">Experience unmatched satisfaction with our dedicated and friendly support.</p>
           <div class="button flex-row-justify-center"><a href="contact.html" class="primary-cta">Contact Us</a></div>
         </div>
       </div>
@@ -137,7 +131,7 @@
         <div class="slide-content container flex-column-justify-center">
           <h2 class="primary-heading">Experienced Professionals at Your Service</h2>
           <div class="div-dec" aria-hidden="true"></div>
-          <p>Trust our skilled team to handle all your technology requirements.</p>
+          <p class="body">Trust our skilled team to handle all your technology requirements.</p>
           <div class="button flex-row-justify-center"><a href="contact.html" class="primary-cta">Contact Us</a></div>
         </div>
       </div>
@@ -152,11 +146,9 @@
       <button class="dot" aria-label="Slide 7" data-index="6"></button>
     </div> -->
   </section>
-
   <!-- *****Hero Section End ***** -->
 
   <!-- *****Our Services Section ***** -->
-
   <section class="section | services" id="services">
     <h2 class="secondary-heading text-color-primary"> What We Do</h2>
     <div class="div-dec" aria-hidden="true"></div>
@@ -169,7 +161,7 @@
             alt="cctv service"
           />
         <h3 class="tertiary-heading">CCTV Sales and Installation</h3>
-        <p>Secure your home or business with our high-quality CCTV systems. <br /> We offer a wide selection of cutting-edge cameras and equipment tailored to meet your specific security needs. <br /> Our expert technicians will install and configure the CCTV system for optimal performance, ensuring that you can monitor your premises with ease and confidence.</p>
+        <p class="body">Secure your home or business with our high-quality CCTV systems. <br /> We offer a wide selection of cutting-edge cameras and equipment tailored to meet your specific security needs. <br /> Our expert technicians will install and configure the CCTV system for optimal performance, ensuring that you can monitor your premises with ease and confidence.</p>
       </div>
       <div class="service-item flex-column-justify-center">
         <img
@@ -179,7 +171,7 @@
             alt="networking service"
           />
         <h3 class="tertiary-heading">Networking Installation and Maintenance</h3>
-        <p>Stay connected and productive with our comprehensive networking solutions. Whether it's setting up a new network or optimizing your existing infrastructure, our team will design, install, and maintain a robust and secure network that meets your demands. With our reliable support, you can focus on your work without worrying about connectivity issues.</p>
+        <p class="body">Stay connected and productive with our comprehensive networking solutions. Whether it's setting up a new network or optimizing your existing infrastructure, our team will design, install, and maintain a robust and secure network that meets your demands. With our reliable support, you can focus on your work without worrying about connectivity issues.</p>
       </div>
       <div class="service-item flex-column-justify-center">
         <img
@@ -189,7 +181,7 @@
             alt="printer service"
           />
         <h3 class="tertiary-heading">Printer Engineering, Sales, Installation, and Maintenance</h3>
-        <p>Efficient printing solutions are vital for any business. At Better Fix Technologies, we provide top-of-the-line printers, carefully selected to match your requirements. Our skilled engineers will handle the installation and configuration, ensuring seamless functionality. Additionally, we offer regular maintenance services to keep your printers performing at their best.</p>
+        <p class="body">Efficient printing solutions are vital for any business. At Better Fix Technologies, we provide top-of-the-line printers, carefully selected to match your requirements. Our skilled engineers will handle the installation and configuration, ensuring seamless functionality. Additionally, we offer regular maintenance services to keep your printers performing at their best.</p>
       </div>
       <div class="service-item flex-column-justify-center">
         <img
@@ -199,35 +191,13 @@
             alt="laptop service"
           />
         <h3 class="tertiary-heading">Laptop Sales and Repairs</h3>
-        <p>In need of a reliable laptop? Look no further! We offer a diverse range of high-performance laptops suited for various purposes. Our team will assist you in finding the perfect match for your needs. Should you encounter any issues, our technicians are here to provide expert repairs and bring your laptop back to life</p>
+        <p class="body">In need of a reliable laptop? Look no further! We offer a diverse range of high-performance laptops suited for various purposes. Our team will assist you in finding the perfect match for your needs. Should you encounter any issues, our technicians are here to provide expert repairs and bring your laptop back to life</p>
       </div>
     </div>
   </section>
-
-  
   <!-- *****Our Services Section End ***** -->
-
-
-  <section class="section simple-cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <h4>Business <em>Solutions</em> and <strong>Crypto</strong> Investments</h4>
-        </div>
-        <div class="col-lg-7">
-          <div class="buttons">
-            <div class="primary-cta">
-              <a href="#">Discover More</a>
-            </div>
-            <div class="secondary-cta">
-              <a href="#">Contact Us</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
+  <!-- ***** About Us Section ***** -->
   <section class="about-us" id="about">
     <div class="container">
       <div class="row">
@@ -363,6 +333,26 @@
             <p>You are allowed to use this template for your websites. You are <b>NOT allowed</b> to redistribute the template ZIP file on any other template websites.<br><br>Thank you for downloading and using our templates. Please tell your friends about our website.</p>
             <div class="primary-cta">
               <a href="about-us.html">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** About Us Section End ***** -->
+  <section class="section simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h4>Business <em>Solutions</em> and <strong>Crypto</strong> Investments</h4>
+        </div>
+        <div class="col-lg-7">
+          <div class="buttons">
+            <div class="primary-cta">
+              <a href="#">Discover More</a>
+            </div>
+            <div class="secondary-cta">
+              <a href="#">Contact Us</a>
             </div>
           </div>
         </div>
