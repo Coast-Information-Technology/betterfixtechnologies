@@ -219,7 +219,7 @@ body {
   }
 }
 
-.green-button a {
+.primary-cta a {
   font-size: 14px;
   color: #fff;
   background-color: var(--clr-primary);
@@ -232,11 +232,11 @@ body {
   transition: all 0.3s;
 }
 
-.green-button a:hover {
+.primary-cta a:hover {
   opacity: 0.9;
 }
 
-.orange-button a {
+.secondary-cta a {
   font-size: 14px;
   color: #fff;
   background-color: var(--clr-accent);
@@ -249,7 +249,7 @@ body {
   transition: all 0.3s;
 }
 
-.orange-button a:hover {
+.secondary-cta a:hover {
   opacity: 0.9;
 }
 
@@ -794,8 +794,8 @@ banner
   opacity: 1;
 }
 
-.swiper-slide-active .buttons .green-button,
-.swiper-slide-active .buttons .orange-button {
+.swiper-slide-active .buttons .primary-cta,
+.swiper-slide-active .buttons .secondary-cta {
   animation: fadeInUp 0.8s;
   -webkit-animation-delay: 1s;
   animation-delay: 0.3s;
@@ -850,7 +850,7 @@ banner
   visibility: visible;
 }
 
-.slide-inner .header-text .buttons .green-button {
+.slide-inner .header-text .buttons .primary-cta {
   display: inline;
   float: left;
   margin-right: 20px;
@@ -944,12 +944,12 @@ section.simple-cta .buttons {
   justify-content: end;
 }
 
-section.simple-cta .buttons .orange-button {
+section.simple-cta .buttons .secondary-cta {
   margin-left: 20px;
 }
 
-section.simple-cta .buttons .orange-button,
-section.simple-cta .buttons .green-button {
+section.simple-cta .buttons .secondary-cta,
+section.simple-cta .buttons .primary-cta {
   margin-top: 25px;
 }
 
@@ -1116,7 +1116,7 @@ section.calculator .section-heading h4 {
   cursor: pointer;
 }
 
-#calculate button.orange-button {
+#calculate button.secondary-cta {
   font-size: 14px;
   color: #fff;
   background-color: var(--clr-accent);
@@ -1130,7 +1130,7 @@ section.calculator .section-heading h4 {
   transition: all 0.3s;
 }
 
-#calculate button.orange-button:hover {
+#calculate button.secondary-cta:hover {
   opacity: 0.9;
 }
 
@@ -1646,7 +1646,7 @@ section.map .info-item a:hover {
 #contact textarea::placeholder {
   color: #212741;
 }
-#contact button.orange-button {
+#contact button.secondary-cta {
   font-size: 14px;
   color: #fff;
   background-color: var(--clr-accent);
@@ -1660,7 +1660,7 @@ section.map .info-item a:hover {
   transition: all 0.3s;
 }
 
-#contact button.orange-button:hover {
+#contact button.secondary-cta:hover {
   background-color: var(--clr-primary);
 }
 
@@ -1784,7 +1784,7 @@ body {
   .slide-inner .header-text .buttons {
     display: inline-flex;
   }
-  .slide-inner .header-text .buttons .green-button {
+  .slide-inner .header-text .buttons .primary-cta {
     float: none;
   }
   .services .service-item i {

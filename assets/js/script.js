@@ -40,12 +40,7 @@ if (toggleButton) {
     toggleButton.addEventListener('click', () => {
         toggleButton.classList.toggle('active');
         const headerNav = document.querySelector('.primary-navigation');
-        console.log(headerNav.style.display)
-        if (headerNav.style.display === 'none' || headerNav.style.display === "") {
-            headerNav.style.display = 'block';
-        } else {
-            headerNav.style.display = 'none';
-        }
+        headerNav.classList.toggle('active');
 
         // Toggle the 'aria-expanded' attribute on the button
         const expanded = toggleButton.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
@@ -57,9 +52,6 @@ if (toggleButton) {
 
     });
 }
-
-
-
 
 /* primary-navigation-toggle idea 2 end */
 
