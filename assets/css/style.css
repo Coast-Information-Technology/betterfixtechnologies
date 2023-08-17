@@ -549,18 +549,18 @@ services
 ---------------------------------------------
 */
 
-.services .service-item {
+.service-item {
   border-radius: 5px;
   padding: 1rem;
   box-shadow: 0px 0px 15px var(--clr-wrapper);
   margin-top: 2.5rem;
 }
-.services .service-item img {
+.service-item img {
   height: 20rem;
   border-radius: 5px;
   width: 100%;
 }
-.services .service-item:hover img {
+.service-item:hover img {
   transition: all 0.5s;
 }
 
