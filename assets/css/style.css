@@ -1380,14 +1380,14 @@ Animation
   }
   .hvr-float-shadow:hover,
   .hvr-float-shadow:focus,
-  .hvr-float-shadow:active {
+  .hvr-float-shadow.active {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     /* move the element up by 5px */
   }
   .hvr-float-shadow:hover:before,
   .hvr-float-shadow:focus:before,
-  .hvr-float-shadow:active:before {
+  .hvr-float-shadow.active:before {
     opacity: 1;
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
